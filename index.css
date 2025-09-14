@@ -1,0 +1,97 @@
+
+
+
+
+
+
+/* webkit , mos , ms  */
+
+
+
+
+
+/* fix place realted issu  */
+
+/* for firefox, and mordenr brower */
+::placeholder{
+    color: #909090;
+    opacity: 1;
+}
+input::-webkit-input-placeholder{
+    /* for chrome safari edge */
+    color: #909090;
+    opacity: 1;
+}
+input::-moz-placeholder{
+    /* fire fox */
+    color: #909090;
+    opacity: 1;
+}
+
+input:-ms-input-placeholder{
+    color: #909090;
+
+}
+
+
+
+/* for font  */
+
+
+
+@font-face {
+
+    /* woff2 for mordern web */
+    font-family:sans-serif;
+    src: url('fonts/sans-serif.woff2') , format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* scrollbar */
+/* for chrome,firefox ,edge */
+body{
+    scrollbar-color: red;
+    scrollbar-width: thin;
+}
+/* ::-webkit-scrollbar for safari */
+
+
+/* best pratices */
+
+
+/* 1>  add <!doctype/> */
+/* 2> use css reset and  Normalize.css */
+
+
+/* button */
+
+/* all browser gave a default style for button  */
+/* to remove this use */
+button{
+    /* removed all button style */
+    all: unset;
+}
+
+
+/* select  */
+select{
+    /* for arrow */
+    appearance: none;
+    -moz-appearance: none;
+    /* firefox */
+
+    -webkit-appearance: none;
+    /*  chrome , safarai , edge*/
+}
+
+select::after{
+    content:"🔥";
+    pointer-events: none;
+}
+button::after {
+  content: "🔥";   /* emoji or text */
+  margin-right: 5px;
+}
